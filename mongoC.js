@@ -5,8 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const password = encodeURIComponent(process.env.MONGO_PASSWORD.trim());
-
-const connectionString = `mongodb+srv://integrationninjas:${password}@dev-cluster.7nko6hh.mongodb.net/?retryWrites=true&w=majority&appName=dev-cluster`; // clustore url
+const connectionString = `mongodb+srv://integrationninjas:${password}@ev-cluster.zk5mtjd.mongodb.net/?retryWrites=true&w=majority&appName=dev-cluster`; // clustore url
 const client = new MongoClient(connectionString);
 let conn;
 try {
